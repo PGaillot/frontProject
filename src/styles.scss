@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sk-Modernist';
+    background-color: #F4F7F9;
+}
+
+h1, h2, h3{
+    font-family: 'Sk-Modernist-Bold';
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Sk-Modernist-Bold';
+    src: url('./assets/fonts/Sk-Modernist-Bold.otf')format("opentype");
+  }
+
+
+  @font-face {
+    font-family: 'Sk-Modernist';
+    src: url('./assets/fonts/Sk-Modernist-Regular.otf')format("opentype");
+  }
+
+  @font-face {
+    font-family: 'Sk-Modernist-Light';
+    src: url('./assets/fonts/Sk-Modernist-Regular.otf') format("opentype");
+    font-weight: 400;
+  }
+
+  #btn-cta{
+    background-color: #FFC947;
+    padding: 0.8em 2em;
+    color: #1A1918;
+    border-radius: 0.4em;
+}

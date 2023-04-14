@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  width: 20em;
+  background-color: #ffffff;
+  padding: 1.8em;
+
+  box-shadow: 0px 40px 20px -19px rgba(204, 226, 255, 0.36);
+  border-radius: 0.4em;
+
+  #title {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+
+  #price {
+    font-family: "Sk-Modernist-Bold";
+    font-size: 4em;
+    color: #428ff3;
+    .neutral-black {
+      font-family: "Sk-Modernist";
+      text-transform: capitalize;
+      font-size: 0.4em;
+    }
+  }
+
+  #familly-option-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4em;
+    margin: 2em 0;
+    font-size: 1.2em;
+    img {
+      height: 1.6em;
+      width: 1.6em;
+    }
+  }
+
+  .cta {
+    align-self: center;
+  }
+
+  .font-bold {
+    font-family: "Sk-Modernist-Bold";
+  }
+}
+
+.neutral-black {
+  color: #7e8184;
+}

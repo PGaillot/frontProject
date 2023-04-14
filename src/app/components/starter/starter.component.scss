@@ -1,0 +1,42 @@
+body{
+    background-color: #1A1918;
+    color:#FFFFFF ;
+}
+
+#starter-container{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding: 2em 200px;
+
+}
+
+#text-container{
+
+    width: 50%;
+    h1{
+        font-size: 4em;
+        line-height:1em;
+    }
+
+
+    #content{
+        font-family: 'Sk-Modernist-Light';
+        font-size: 1.8em;
+    }
+
+
+    #action{
+        font-weight: 700;
+        font-size: 0.8em;
+    }
+}
+
+#img-container{
+    width: 50%;
+    img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+}

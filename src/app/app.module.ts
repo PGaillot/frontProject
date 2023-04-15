@@ -10,6 +10,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import { GiftCardComponent } from './components/gift-card/gift-card.component';
 import { PriceCardComponent } from './components/price-card/price-card.component';
 import { FeatureComponent } from './components/prices/feature.component';
+import { TrialStepComponent } from './components/explore/trial-step.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FeatureComponent } from './components/prices/feature.component';
     GiftCardComponent,
     PriceCardComponent,
     FeatureComponent,
+    TrialStepComponent,
   ],
   imports: [
     BrowserModule,

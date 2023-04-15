@@ -1,0 +1,57 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.2em;
+    width: 18em;
+  
+    #circle {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.4em;
+      height: 4em;
+      min-width: 4em;
+      border: #ffffff solid 0.2em;
+      border-radius: 4em;
+      img {
+        height: 1.4em;
+      }
+  
+      #pin {
+        position: absolute;
+        right: -0.4em;
+        top: -0.4em;
+        font-size: 1.6em;
+        font-family: 'Sk-Modernist-Bold';
+  
+        color: #ffffff;
+        background-color: #212529;
+        height: 1.2em;
+        width: 1.2em;
+        text-align: center;
+        vertical-align: top;
+  
+        border-radius: 1.6em;
+        outline: #ffc947 solid 0.2em;
+          
+        span{
+          position: relative;
+          top: -6%;
+        }
+      }
+    }
+  
+    #content {
+      display: flex;
+      flex-direction: column;
+  
+      #title {
+        font-family: "Sk-Modernist-Bold";
+        font-size: 1.2em;
+      }
+  
+  
+    }
+  }

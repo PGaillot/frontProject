@@ -12,6 +12,23 @@ h1, h2, h3{
     margin: 0;
 }
 
+p{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 4em;
+}
+
+h2{
+  font-size: 3em;
+}
+
+h3{
+  font-size: 2em;
+}
+
 @font-face {
     font-family: 'Sk-Modernist-Bold';
     src: url('./assets/fonts/Sk-Modernist-Bold.otf')format("opentype");

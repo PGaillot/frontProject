@@ -1,3 +1,11 @@
+@use "@angular/material" as mat;
+@import "../../kinomap-color-theme.scss";
+
+$dark-500: map-get($md-dark, 500);
+$dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+$primary-500: map-get($md-yellow, 500);
+
+
 #container {
     display: flex;
     flex-direction: row;
@@ -26,15 +34,15 @@
         font-size: 1.6em;
         font-family: 'Sk-Modernist-Bold';
   
-        color: #ffffff;
-        background-color: #212529;
+        color:$dark-500-contrast;
+        background-color: $dark-500;
         height: 1.2em;
         width: 1.2em;
         text-align: center;
         vertical-align: top;
   
         border-radius: 1.6em;
-        outline: #ffc947 solid 0.2em;
+        outline:$primary-500 solid 0.2em;
           
         span{
           position: relative;

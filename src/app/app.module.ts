@@ -11,6 +11,12 @@ import { GiftCardComponent } from './components/gift-card/gift-card.component';
 import { PriceCardComponent } from './components/price-card/price-card.component';
 import { FeatureComponent } from './components/prices/feature.component';
 import { TrialStepComponent } from './components/explore/trial-step.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Material Design imports
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule} from '@angular/material/icon';
+import { AccordionComponent } from './components/faq/accordion.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +29,17 @@ import { TrialStepComponent } from './components/explore/trial-step.component';
     PriceCardComponent,
     FeatureComponent,
     TrialStepComponent,
+    AccordionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    // Material design imports
+    MatExpansionModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

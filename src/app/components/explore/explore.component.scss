@@ -26,12 +26,38 @@ body{
         background-position: center center;
       
         #content {
+
           margin-right: 12em;
           width: 20em;
           color: $dark-500-contrast;
 
           h1{
             color: $dark-500-contrast;
+          }
+
+          #rate-container{
+            margin-top: 1em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+
+            #certificate{
+              height: 2.4em;
+            }
+            #rate{
+              font-family: 'Sk-Modernist-Bold';
+              font-size: 1.2em;
+            }
+            #rate-stars-container{
+              display: flex;
+              flex-direction: row;
+              gap: 0.2em;
+              img{
+                height: 1em;
+                width:  1em;
+              }
+            }
           }
         }
       }
@@ -43,6 +69,7 @@ body{
         justify-content: center;
         align-items: stretch;
         margin: 0 2em;
+
         #banner {
             position: absolute;
             top: -2em;

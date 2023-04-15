@@ -1,13 +1,23 @@
+@use "@angular/material" as mat;
+@import "../../kinomap-color-theme.scss";
+
+$dark-200: map-get($md-dark, 200);
+$dark-500: map-get($md-dark, 500);
+$dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+$secondary-200:map-get($kinomap-accent, 200);
+$secondary-500:map-get($kinomap-accent, 500);
+
 body {
   display: flex;
   flex-direction: column;
   align-items: start;
+  color: $dark-500;
 
   width: 20em;
-  background-color: #ffffff;
+  background-color: $dark-500-contrast;
   padding: 1.8em;
 
-  box-shadow: 0px 40px 20px -19px rgba(204, 226, 255, 0.36);
+  box-shadow: 0px 40px 20px -19px rgba($color: $secondary-200, $alpha: 0.36);
   border-radius: 0.4em;
 
   #title {
@@ -18,7 +28,7 @@ body {
   #price {
     font-family: "Sk-Modernist-Bold";
     font-size: 4em;
-    color: #428ff3;
+    color: $secondary-500;
     .neutral-black {
       font-family: "Sk-Modernist";
       text-transform: capitalize;
@@ -48,5 +58,5 @@ body {
 }
 
 .neutral-black {
-  color: #7e8184;
+  color: $dark-200;
 }

@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
             <span><ng-content></ng-content></span>
         </body>
     `,
-    styles:['body{display:flex; flex-direction:row;gap:1em}.marker{background-color:#FFC947; height:1em; min-width:1em; border-radius:1em;}']
+    styleUrls:['./feature.component.scss']
 })
 export class FeatureComponent{
 

@@ -1,5 +1,12 @@
-body{
+@use "@angular/material" as mat;
+@import "../../kinomap-color-theme.scss";
 
+$dark-100: map-get($md-dark, 100);
+$dark-500: map-get($md-dark, 500);
+$dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+$primary-500: map-get($md-yellow, 500);
+
+body{
     #content-container {
         display: flex;
         align-items: center;
@@ -7,12 +14,12 @@ body{
         background: linear-gradient(
             (
               -90deg,
-              #212529 0%,
-              rgba(33, 37, 41, 0.9) 15%,
-              rgba(33, 37, 41, 0.1) 100%
+              $dark-500 0%,
+              rgba($dark-500, 0.9) 15%,
+              rgba($dark-500, 0.1) 100%
             )
           ),
-          linear-gradient((0deg, #212529 0%, rgba(33, 37, 41, 0) 15%)),
+          linear-gradient((0deg, $dark-500 0%, rgba($dark-500, 0) 15%)),
           no-repeat
             url("https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/image2.png");
         height: 45em;
@@ -21,7 +28,11 @@ body{
         #content {
           margin-right: 12em;
           width: 20em;
-          color: #ffffff;
+          color: $dark-500-contrast;
+
+          h1{
+            color: $dark-500-contrast;
+          }
         }
       }
       
@@ -41,7 +52,7 @@ body{
             justify-content: space-evenly;
             flex-wrap: wrap;
             gap: 2em;
-            background-color: #ffc947;
+            background-color: $primary-500;
             padding: 4em 0;
 
             h3{

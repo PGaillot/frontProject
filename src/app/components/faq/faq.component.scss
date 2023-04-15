@@ -1,3 +1,8 @@
+@use "@angular/material" as mat;
+@import "../../kinomap-color-theme.scss";
+
+$dark-200: map-get($md-dark, 200);
+
 body {
   display: flex;
   flex-direction: column;
@@ -13,7 +18,7 @@ body {
 
     p{
         margin-bottom: 1.6em;
-        color:#7E8184;
+        color:$dark-200;
     }
 
   #accordion-container {

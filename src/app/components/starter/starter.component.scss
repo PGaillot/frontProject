@@ -1,6 +1,14 @@
+@use "@angular/material" as mat;
+@import "../../kinomap-color-theme.scss";
+
+$dark-100: map-get($md-dark, 100);
+$dark-500: map-get($md-dark, 500);
+$dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+
+
 body {
-  background-color: #1a1918;
-  color: #ffffff;
+  background-color: $dark-500;
+  color: $dark-500-contrast;
 
   #starter-container {
     display: flex;
@@ -10,17 +18,19 @@ body {
     padding: 6em 12em 2em 12em;
 
     #text-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
       width: 50%;
       h1 {
+        color: $dark-500-contrast;
         line-height: 1em;
       }
 
       #content {
         font-family: "Sk-Modernist-Light";
         font-size: 1.2em;
+        color: $dark-100;
       }
 
       #action {

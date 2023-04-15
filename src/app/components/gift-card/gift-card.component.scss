@@ -1,16 +1,24 @@
-body{
-    margin: 0 1em;
-    background-color: #1A1918;
-    padding: 2em 8em;
-}
+body {
+  margin: 0 1em;
+  background-color: #1a1918;
+  padding: 4em 8em;
 
-#content{
+  #content-container {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    color: #FFFFFF;
-    width: 24em;
+    align-items: flex-start;
+    gap: 1em;
+
+    h3 {
+      color: #ffffff;
+    }
+
+    #content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      color: #c8c8c8;
+      width: 24em;
+    }
+  }
 }
-
-
-

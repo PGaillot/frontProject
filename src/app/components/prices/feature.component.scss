@@ -4,12 +4,16 @@
 @import "../../kinomap-color-theme.scss";
 
 $primary-500: map-get($md-yellow, 500);
+$dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+
 
 body {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  background-color: $dark-500-contrast;
 }
+
 .marker {
   background-color: $primary-500;
   height: 1em;

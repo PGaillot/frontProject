@@ -3,15 +3,18 @@
 
 $dark-200: map-get($md-dark, 200);
 $dark-500: map-get($md-dark, 500);
-$dark-500-contrast: map-get($kinomap-darker, '500-contrast');
-$secondary-200:map-get($kinomap-accent, 200);
-$secondary-500:map-get($kinomap-accent, 500);
+$dark-500-contrast: map-get($kinomap-darker, "500-contrast");
+$secondary-200: map-get($kinomap-accent, 200);
+$secondary-500: map-get($kinomap-accent, 500);
+$primary-500: map-get($md-yellow, 500);
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
   color: $dark-500;
+  overflow: hidden;
 
   width: 20em;
   background-color: $dark-500-contrast;
@@ -19,6 +22,15 @@ body {
 
   box-shadow: 0px 40px 20px -19px rgba($color: $secondary-200, $alpha: 0.36);
   border-radius: 0.4em;
+
+  #best-value-container {
+    position: absolute;
+    rotate: 45deg;
+    background-color: $primary-500;
+    padding: 0.6em 6em;
+    top: 3em;
+    right: -5em;
+  }
 
   #title {
     font-size: 2em;
@@ -28,7 +40,6 @@ body {
   #price {
     font-family: "Sk-Modernist-Bold";
     font-size: 4em;
-    color: $secondary-500;
     .neutral-black {
       font-family: "Sk-Modernist";
       text-transform: capitalize;
@@ -59,4 +70,30 @@ body {
 
 .neutral-black {
   color: $dark-200;
+}
+
+.best-value {
+  padding: 4em 1.8em;
+  border: $primary-500 0.2em solid;
+}
+
+.best-value-color {
+  color: $primary-500;
+}
+
+.secondary-color {
+  color: $secondary-500;
+}
+
+.mat-btn-cta {
+  align-self: center;
+  padding: 1em 4em 1.1em 4em;
+  font-family: "Sk-Modernist-Bold";
+}
+.stroked {
+  outline: 0.2em $secondary-500 solid;
+}
+
+.fill {
+  padding: 1.4em 4em 1.6em 4em;
 }

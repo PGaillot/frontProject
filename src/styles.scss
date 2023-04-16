@@ -9,6 +9,10 @@ $secondrary-500: map-get($md-blue, 500);
 $dark-500: map-get($md-dark, 500);
 $dark-500-contrast: map-get($kinomap-darker, '500-contrast');
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;

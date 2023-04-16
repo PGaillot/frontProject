@@ -27,5 +27,10 @@ export class DataServicesService {
     const url = this.constants.apiGetPostEndpoint + 'faq';
     return this.httpClient.get(url)
   }
+
+  getSubscriptions(){
+    const url = this.constants.apiGetPostEndpoint + 'subscriptions';
+    return this.httpClient.get(url)
+  }
   
 }

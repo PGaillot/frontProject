@@ -1,15 +1,40 @@
-<body>
-  <h3 id="title">Mensuel</h3>
+<body [ngClass]="{ 'best-value': subscription.best_value }">
+  <span id="best-value-container" *ngIf="subscription.best_value"
+    >BEST VALUES</span
+  >
+
+  <h3 id="title">{{ subscription.name }}</h3>
   <div class="neutral-black">à partir de</div>
-  <div id="price">11.99€<span class="neutral-black">/mois</span></div>
-  <div><span class="neutral-black">pour</span> 1 Utilisateur</div>
+  <div
+    id="price"
+    [ngClass]="subscription.best_value ? 'best-value-color' : 'secondary-color'"
+  >
+    {{ subscription.price }}€<span class="neutral-black"
+      >/{{ period | uppercase }}</span
+    >
+  </div>
+  <div>
+    <span class="neutral-black">pour</span> {{ subscription.users }} Utilisateur
+  </div>
 
   <div id="familly-option-container">
     <img src="../../../assets/icons/Picto-abonnement-famille.svg" alt="" />
     <div>
-      Disponible avec l'option famille <span class="font-bold">jusqu'à 5 utilisateurs</span>
+      Disponible avec l'option famille
+      <span class="font-bold">jusqu'à 5 utilisateurs</span>
     </div>
   </div>
 
-  <div id="btn-cta" class="cta">Abonnez-vous</div>
+  <ng-container *ngIf="subscription.best_value; else bestValueTemplate">
+    <button class="mat-btn-cta fill" mat-flat-button color="primary">
+      Abonnez-vous
+    </button>
+  </ng-container>
+  <ng-template #bestValueTemplate>
+    <button class="mat-btn-cta stroked" mat-stroked-button color="accent">
+      Abonnez-vous
+    </button>
+  </ng-template>
+
+  <!-- <div id="btn-cta" class="cta">Abonnez-vous</div> -->
 </body>

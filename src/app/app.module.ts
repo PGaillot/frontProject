@@ -19,6 +19,8 @@ import { MatIconModule} from '@angular/material/icon';
 import { AccordionComponent } from './components/faq/accordion.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StarComponent } from './components/explore/star.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { StarComponent } from './components/explore/star.component';
     // Material design imports
     MatExpansionModule,
     MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

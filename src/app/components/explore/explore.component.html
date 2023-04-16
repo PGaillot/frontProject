@@ -10,11 +10,7 @@
         <img id="certificate" src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/preferedApp.png" alt="certification : application 100 recommandées">
         <span id="rate">{{appRate}}</span>
         <div id="rate-stars-container">
-          <img src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/emptyStar.svg" alt="">
-          <img src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/emptyStar.svg" alt="">
-          <img src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/emptyStar.svg" alt="">
-          <img src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/emptyStar.svg" alt="">
-          <img src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/emptyStar.svg" alt="">
+          <app-star *ngFor="let rate of rateArray" [rate]="rate"></app-star>
         </div>
       </div>
     </div>

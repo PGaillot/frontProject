@@ -8,19 +8,36 @@ import { DataServicesService } from 'src/app/services/dataServices/data-services
 })
 export class ExploreComponent {
   constructor(private dataServices: DataServicesService) {}
-  appRate = ""
-  trial = "0"
+  
+  trial = 0;
+  appRate:number = 0;
+  maxRate:number = 5;
+  rateArray:number[] = [];
+
   ngOnInit(): void {
 
-    const scoreObs = this.dataServices.getScore();
-    const trialObs = this.dataServices.getTrial();
-
-    scoreObs.subscribe(
-      rate => this.appRate += rate
+    this.dataServices.getScore().subscribe(
+      (rate:any) => {
+        this.appRate = rate;
+        this.initRateArray(rate)
+      }
     );
 
-    trialObs.subscribe( 
-      trial => this.trial = trial + ""
-       )
+    this.dataServices.getTrial().subscribe( 
+      (trial:any) => this.trial = trial
+    );
   }
+
+  initRateArray(rate:number){
+    for(let i = 0; i < this.maxRate; i++){
+      if(rate - 1 > 0){
+        rate-=1;
+        this.rateArray.push(1);
+      } else {
+        this.rateArray.push(rate)
+      }
+    }
+  }
+
+
 }

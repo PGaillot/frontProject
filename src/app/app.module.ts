@@ -18,6 +18,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule} from '@angular/material/icon';
 import { AccordionComponent } from './components/faq/accordion.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StarComponent } from './components/explore/star.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     FeatureComponent,
     TrialStepComponent,
     AccordionComponent,
+    StarComponent,
   ],
   imports: [
     BrowserModule,

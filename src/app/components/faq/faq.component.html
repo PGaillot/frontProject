@@ -1,4 +1,5 @@
 <body>
+
   <h3>Vos questions les plus fréquentes</h3>
   <p>
     Get ready, start your indoor training and explore the world from home on
@@ -6,10 +7,7 @@
   </p>
 
   <div id="accordion-container">
-   <app-accordion></app-accordion>
-   <app-accordion></app-accordion>
-   <app-accordion></app-accordion>
-   <app-accordion></app-accordion>
-   <app-accordion></app-accordion>
+   <app-accordion *ngFor="let faq of faqList" [faq]="faq"></app-accordion>
   </div>
+  
 </body>

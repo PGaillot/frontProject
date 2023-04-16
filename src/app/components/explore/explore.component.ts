@@ -1,3 +1,4 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
 import { DataServicesService } from 'src/app/services/dataServices/data-services.service';
 
@@ -13,7 +14,40 @@ export interface trialStep{
   styleUrls: ['./explore.component.scss'],
 })
 export class ExploreComponent {
-  constructor(private dataServices: DataServicesService) {}
+  constructor(
+    private dataServices: DataServicesService,
+    private responsive: BreakpointObserver
+  ) {}
+
+  smallScreen: boolean = false;
+  xSmallScreen: boolean = false;
+
+  ngOnInit(): void {
+    this.responsive.observe(Breakpoints.Small).subscribe((result) => {
+      this.smallScreen = false;
+      if (result.matches) {
+        this.smallScreen = true;
+      }
+    });
+
+    this.responsive.observe(Breakpoints.XSmall).subscribe((result) => {
+      this.xSmallScreen = false;
+      if(result.matches){
+        this.xSmallScreen = true
+      }
+    })
+
+    this.dataServices.getScore().subscribe(
+      (rate:any) => {
+        this.appRate = rate;
+        this.initRateArray(rate)
+      }
+    );
+
+    this.dataServices.getTrial().subscribe( 
+      (trial:any) => this.trial = trial
+    );
+  }
   
   trialSteps:trialStep[] = [
     {
@@ -32,20 +66,6 @@ export class ExploreComponent {
   appRate:number = 0;
   maxRate:number = 5;
   rateArray:number[] = [];
-
-  ngOnInit(): void {
-
-    this.dataServices.getScore().subscribe(
-      (rate:any) => {
-        this.appRate = rate;
-        this.initRateArray(rate)
-      }
-    );
-
-    this.dataServices.getTrial().subscribe( 
-      (trial:any) => this.trial = trial
-    );
-  }
 
   initRateArray(rate:number){
     for(let i = 0; i < this.maxRate; i++){

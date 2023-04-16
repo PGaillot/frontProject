@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { subscription } from '../prices/prices.component';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-price-card',
@@ -7,12 +8,29 @@ import { subscription } from '../prices/prices.component';
   styleUrls: ['./price-card.component.scss'],
 })
 export class PriceCardComponent {
+
+  constructor(
+    private responsive: BreakpointObserver
+  ) {}
+
+  xSmallScreen: boolean = false;
+
+  ngOnInit(): void {
+
+    this.responsive.observe(Breakpoints.XSmall).subscribe((result) => {
+      this.xSmallScreen = false;
+      if(result.matches){
+        this.xSmallScreen = true
+      }
+    })
+
+    this.initPeriod(this.subscription.period);
+
+  }
+
   @Input() subscription!: subscription;
   period: string = '';
 
-  ngOnInit(): void {
-    this.initPeriod(this.subscription.period);
-  }
   initPeriod(period: number) {
     switch (period) {
       case 1:

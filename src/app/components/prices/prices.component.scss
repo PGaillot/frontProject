@@ -44,6 +44,7 @@ body {
     flex-direction: row;
     margin-top: 4em;
     margin-bottom: 12em;
+    gap: 1em;
     #features-title {
       width: 34%;
     }
@@ -54,8 +55,60 @@ body {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    app-feature:last-child{
-      grid-column: 1/ span 2;
+    app-feature:last-child {
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+.smallScreen {
+  padding: 0 2em;
+  margin-top: 6em;
+  #bottom-background{
+    height: 30%;
+  }
+
+  #prices-cards-content {
+    flex-direction: column;
+  }
+
+  #features-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    #features-title {
+      text-align: center;
+      width: 75%;
+    }
+    #features-content{
+      width: 80%;
+    }
+  }
+}
+
+.xSmallScreen {
+  padding:  1em 0.4em;
+  margin-top: 4em;
+  #bottom-background{
+    height: 30%;
+  }
+  
+  #prices-cards-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #features-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+    width: 100%;
+    #features-title {
+      text-align: center;
+      width: 75%;
+    }
+    #features-content{
+      width: 90%;
     }
   }
 }

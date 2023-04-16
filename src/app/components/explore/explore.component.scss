@@ -88,11 +88,58 @@ body{
                 max-width: 8em;
             }
           }
-      }
-
-
-        
+      }        
 }
 
+
+.smallScreen{
+  #content-container{
+    justify-content: center;
+    #content{
+      margin: 0 2em;
+      width: 80%;
+      justify-content: flex-end;
+      text-align: end;
+      #rate-container{
+        justify-content: flex-end;
+      }
+    }
+
+
+  }
+  #banner-container{
+    height: 24em;
+    #banner{
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items:center ;
+    }
+  }
+}
+
+.xSmallScreen{
+  #content-container{
+    justify-content: center;
+    #content{
+      margin: 0 2em;
+      width: 80%;
+      justify-content: flex-end;
+      text-align: end;
+      #rate-container{
+        justify-content: flex-end;
+      }
+    }
+
+
+  }
+  #banner-container{
+    height: 24em;
+    #banner{
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items:center ;
+    }
+  }
+}
 
 

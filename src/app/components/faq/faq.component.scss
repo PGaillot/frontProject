@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
     margin: 8em;
 
     h3{
@@ -27,5 +28,35 @@ body {
     gap: 0.6em;
     align-items: stretch;
     width: 48em;
+  }
+}
+
+.smallScreen{
+  margin: 8em 2em;
+  h3{
+    width: 80%;
+  }
+  p{
+    margin: 0 4em;
+  }
+  #accordion-container {
+    gap: 0.6em;
+    align-items: stretch;
+    width: 80%;
+  }
+}
+
+.xSmallScreen{
+  margin: 8em 2em;
+  h3{
+    width: 80%;
+  }
+  p{
+    margin: 0 4em;
+  }
+  #accordion-container {
+    gap: 0.6em;
+    align-items: stretch;
+    width: 100%;
   }
 }

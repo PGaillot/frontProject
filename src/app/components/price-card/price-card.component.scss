@@ -50,6 +50,7 @@ body {
   #familly-option-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 1.4em;
     margin: 2em 0;
     font-size: 1.2em;
@@ -92,4 +93,9 @@ body {
 
 .fill {
   padding: 1.4em 4em 1.6em 4em;
+}
+
+
+.xSmallScreen{
+  width: 16em;
 }

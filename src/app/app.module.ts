@@ -12,6 +12,7 @@ import { PriceCardComponent } from './components/price-card/price-card.component
 import { FeatureComponent } from './components/prices/feature.component';
 import { TrialStepComponent } from './components/explore/trial-step.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutModule } from '@angular/cdk/layout';
 
 // Material Design imports
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -41,6 +42,7 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    LayoutModule,
     // Material design imports
     MatExpansionModule,
     MatIconModule,

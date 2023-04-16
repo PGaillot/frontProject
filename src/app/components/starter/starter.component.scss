@@ -53,3 +53,40 @@ body {
     }
   }
 }
+
+.smallScreen{
+  #starter-container{
+    padding: 2em 2em;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1em;
+
+    #text-container{
+      width: 100%;
+    }
+
+    #img-container{
+      width: 80%;
+    }
+  }
+}
+
+.xSmallScreen{
+  h1{
+    font-size: 3em;
+  }
+  #starter-container{
+    padding: 2em 1em;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1em;
+
+    #text-container{
+      width: 100%;
+    }
+
+    #img-container{
+      width: 100%;
+    }
+  }
+}

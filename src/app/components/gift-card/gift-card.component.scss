@@ -3,7 +3,7 @@
 
 $dark-100: map-get($md-dark, 100);
 $dark-500: map-get($md-dark, 500);
-$dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+$dark-500-contrast: map-get($kinomap-darker, "500-contrast");
 
 body {
   margin: 0 1em;
@@ -28,4 +28,18 @@ body {
       width: 24em;
     }
   }
+}
+
+.smallScreen {
+  padding: 2em;
+
+}
+
+.xSmallScreen {
+  padding: 2em;
+#content-container{
+    #content{
+      width: 80%;
+    }
+}
 }

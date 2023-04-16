@@ -16,7 +16,7 @@ $dark-500: map-get($md-dark, 500);
       #add-icon {
         border: 0.2em solid $dark-50;
         height: 2em;
-        width: 2em;
+        min-width: 2em;
         border-radius: 2em;
 
         position: relative;

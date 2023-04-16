@@ -8,6 +8,7 @@ $secondrary-50:map-get($md-blue, 50);
 $secondrary-500: map-get($md-blue, 500);
 $dark-500: map-get($md-dark, 500);
 $dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+$dark-300: map-get($md-dark, 300);
 
 html{
   scroll-behavior: smooth;
@@ -64,6 +65,14 @@ h3 {
 
 .primary-color{
   color: $primary-500;
+}
+
+.font-bold {
+  font-family: "Sk-Modernist-Bold";
+}
+
+.dark-300-color{
+ color: $dark-300;
 }
 
 #btn-cta {

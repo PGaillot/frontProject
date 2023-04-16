@@ -5,6 +5,8 @@
 
 $primary-500: map-get($md-yellow, 500);
 $dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+$dark-200: map-get($md-dark, 200);
+
 
 
 body {
@@ -12,6 +14,7 @@ body {
   flex-direction: row;
   gap: 1em;
   background-color: $dark-500-contrast;
+  color: $dark-200;
 }
 
 .marker {

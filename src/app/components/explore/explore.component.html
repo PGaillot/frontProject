@@ -18,8 +18,7 @@
   <div id="banner-container">
     <div id="banner">
       <h3>Profitez de <br>{{trial}} jours gratuit</h3>
-      <app-trial-step></app-trial-step>
-      <app-trial-step></app-trial-step>
+      <app-trial-step *ngFor="let trialStep of trialSteps; let index = index " [trialStep]="trialStep" [trialNumber]="index"></app-trial-step>
     </div>
   </div>
 </body>

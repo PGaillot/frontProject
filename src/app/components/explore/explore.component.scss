@@ -27,15 +27,23 @@ body{
         background-position: center center;
       
         #content {
-
           margin-right: 12em;
-          width: 20em;
+          width: 28em;
           color: $dark-500-contrast;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
 
           h1{
             color: $dark-500-contrast;
           }
 
+          #details{
+            width: 80%;
+            color: $dark-100;
+            font-size: 1.4em;
+            line-height: 1.5em;
+          }
           #rate-container{
             margin-top: 1em;
             display: flex;

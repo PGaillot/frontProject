@@ -2,40 +2,71 @@
 @import "../../kinomap-color-theme.scss";
 
 $dark-500: map-get($md-dark, 500);
-$dark-500-contrast: map-get($kinomap-darker, '500-contrast');
+$dark-500-contrast: map-get($kinomap-darker, "500-contrast");
 $primary-500: map-get($md-yellow, 500);
 
-div{}
 
 #container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1.2em;
-    width: 18em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.2em;
+  width: 18em;
+
+  .relative {
+    position: relative;
+  }
+
+  #circles-container{
+    margin-top: 0.4em;
+    position: relative;
+
+    .absolute {
+      position: absolute;
+    }
   
-    #circle {
-      position: relative;
+    .half-circle-cont{
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      overflow: hidden;
+      width: 2em;
+      rotate: 180deg;
+    }
+
+    .border-full{
+      border: $dark-500-contrast solid 0.2em;
+    }
+    .border-opacity{
+      border: rgba( $dark-500-contrast,0.3) solid 0.2em;
+    }
+
+
+
+    .circle {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 0.4em;
       height: 4em;
       min-width: 4em;
-      border: #ffffff solid 0.2em;
       border-radius: 4em;
+
       img {
         height: 1.4em;
       }
-  
+
+
+
+
       #pin {
         position: absolute;
         right: -0.4em;
         top: -0.4em;
         font-size: 1.6em;
-        font-family: 'Sk-Modernist-Bold';
+        font-family: "Sk-Modernist-Bold";
   
-        color:$dark-500-contrast;
+        color: $dark-500-contrast;
         background-color: $dark-500;
         height: 1.2em;
         width: 1.2em;
@@ -43,24 +74,25 @@ div{}
         vertical-align: top;
   
         border-radius: 1.6em;
-        outline:$primary-500 solid 0.2em;
-          
-        span{
+        outline: $primary-500 solid 0.15em;
+  
+        span {
           position: relative;
           top: -6%;
         }
       }
     }
-  
-    #content {
-      display: flex;
-      flex-direction: column;
-  
-      #title {
-        font-family: "Sk-Modernist-Bold";
-        font-size: 1.2em;
-      }
-  
-  
+  }
+
+
+
+  #content {
+    display: flex;
+    flex-direction: column;
+
+    #title {
+      font-family: "Sk-Modernist-Bold";
+      font-size: 1.2em;
     }
   }
+}

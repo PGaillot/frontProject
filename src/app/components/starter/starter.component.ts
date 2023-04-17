@@ -13,10 +13,20 @@ export class StarterComponent {
     private responsive: BreakpointObserver
   ) {}
 
+  mediumScreen:boolean = false;
   smallScreen: boolean = false;
   xSmallScreen: boolean = false;
 
   ngOnInit(): void {
+
+    this.responsive.observe(Breakpoints.Medium).subscribe((result) => {
+      this.mediumScreen = false;
+      if(result.matches){
+        this.mediumScreen = true;
+      }
+    })
+
+
     this.responsive.observe(Breakpoints.Small).subscribe((result) => {
       this.smallScreen = false;
       if (result.matches) {

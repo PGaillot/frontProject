@@ -13,29 +13,33 @@ body {
   #starter-container {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    padding: 6em 12em 2em 12em;
+    padding: 6em 14em 2em 14em;
+    gap: 2em;
 
     #text-container {
       display: flex;
       flex-direction: column;
       gap: 1em;
       width: 50%;
+      margin-bottom: 2em;
       h1 {
+        width: 60%;
         color: $dark-500-contrast;
         line-height: 1em;
       }
 
       #content {
         font-family: "Sk-Modernist-Light";
-        font-size: 1.2em;
+        font-size: 2em;
+        width: 80%;
         color: $dark-100;
       }
 
       #action {
         font-weight: 700;
-        font-size: 0.8em;
+        font-size: 1em;
 
         .arrow {
           margin-top: 0.6em;
@@ -53,6 +57,23 @@ body {
     }
   }
 }
+
+.mediumScreen{
+  #starter-container{
+    padding: 6em 8em 2em 8em;
+
+    #text-container{
+      h1{
+        width: 100%;
+      }
+
+      #content{
+        width: 100%;
+      }
+    }
+  }
+}
+
 
 .smallScreen{
   #starter-container{

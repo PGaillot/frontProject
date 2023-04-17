@@ -5,39 +5,52 @@ $dark-50: map-get($md-dark, 50);
 $dark-500: map-get($md-dark, 500);
 
 #accordion {
-    mat-expansion-panel-header {
-      padding: 1em;
+  mat-expansion-panel-header {
+    padding: 1em;
 
-      .mat-expansion-panel-header-description {
-        justify-content: space-between;
-        margin: 0 1.5em 0 2em;
+    .mat-expansion-panel-header-description {
+      justify-content: space-between;
+      margin: 0 1.5em 0 2em;
+    }
+
+    #add-icon {
+      border: 0.2em solid $dark-50;
+      height: 2em;
+      min-width: 2em;
+      border-radius: 2em;
+
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        display: block;
+        padding: 0;
+        margin: 0;
+        background-color: $dark-500;
+        height: 0.12em;
+        width: 0.6em;
       }
 
-      #add-icon {
-        border: 0.2em solid $dark-50;
-        height: 2em;
-        min-width: 2em;
-        border-radius: 2em;
-
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        span {
-          display: block;
-          padding: 0;
-          margin: 0;
-          background-color: $dark-500;
-          height: 0.12em;
-          width: 0.6em;
-        }
-
-        #vertical {
-          position: absolute;
-          align-self: center;
-          rotate: 90deg;
-        }
+      #vertical {
+        position: absolute;
+        align-self: center;
+        rotate: 90deg;
       }
     }
   }
+}
+
+.xSmallScreen {
+
+    mat-expansion-panel-header {
+      padding: 0.2em;
+
+      .mat-expansion-panel-header-description {
+        justify-content: space-between;
+        margin: 0 0 0 0.5em !important;
+      }
+    }
+  
+}

@@ -5,7 +5,8 @@ import { DataServicesService } from 'src/app/services/dataServices/data-services
 export interface trialStep{
   title:string,
   details:string,
-  imgUrl:string
+  imgUrl:string,
+  halfCircle?:boolean
 }
 
 @Component({
@@ -53,7 +54,8 @@ export class ExploreComponent {
     {
       title:"Aujourd'hui",
       details:"démarrez votre 1er entraînement gratuitement",
-      imgUrl:"https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/lock.svg"
+      imgUrl:"https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/lock.svg",
+      halfCircle:true
     },
     {
       title:"Jour 14",

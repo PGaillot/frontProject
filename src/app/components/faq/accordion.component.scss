@@ -3,11 +3,19 @@
 
 $dark-50: map-get($md-dark, 50);
 $dark-500: map-get($md-dark, 500);
+$secondary-A700:map-get($md-blue, A700 );
 
 #accordion {
+
+  mat-expansion-panel{
+    box-shadow: 0 0 2em rgba($secondary-A700, 0.5) !important;
+
+  }
+
   mat-expansion-panel-header {
     padding: 1em;
     border: 0.2em $dark-50 solid;
+    
 
     .mat-expansion-panel-header-description {
       justify-content: space-between;
@@ -41,6 +49,11 @@ $dark-500: map-get($md-dark, 500);
         rotate: 90deg;
       }
     }
+  }
+
+
+  mat-expansion-panel-header.mat-expanded{
+    border: none;
   }
 }
 

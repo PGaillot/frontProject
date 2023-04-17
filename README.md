@@ -15,12 +15,9 @@ Ensuite, vous devez cloner ce projet sur votre machine. Ouvrez une fenêtre de t
 
 `git clone https://github.com/PGaillot/frontProject.git`
 
-Une fois le projet cloné, naviguez jusqu'au répertoire `Kinomap` et exécutez la commande suivante pour installer les dépendances:
-
-`cd FrontProject`
-`npm update`
-
 ## Utilisation
+
+Une fois le projet cloné, naviguez jusqu'au répertoire `Kinomap` et exécutez la commande suivante pour installer les dépendances:
 
 `cd FrontProject`
 `npm update`
@@ -30,7 +27,6 @@ Une fois le projet cloné, naviguez jusqu'au répertoire `Kinomap` et exécutez 
 Une fois les dépendances installées, vous pouvez exécuter le projet en utilisant la commande suivante:
 
 `ng serve`
-
 
 Cela démarrera le serveur de développement. Vous pouvez accéder à l'application en ouvrant un navigateur et en accédant à l'URL suivante: `http://localhost:4200/`
 

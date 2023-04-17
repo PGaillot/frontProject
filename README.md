@@ -18,8 +18,8 @@ Ensuite, vous devez cloner ce projet sur votre machine. Ouvrez une fenêtre de t
 
 Une fois le projet cloné, naviguez jusqu'au répertoire `Kinomap` et exécutez la commande suivante pour installer les dépendances:
 
-`cd FrontProject
-npm update`
+`cd FrontProject`
+`npm update`
 
 ## Utilisation
 

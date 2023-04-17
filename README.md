@@ -13,38 +13,20 @@ Pour exécuter ce projet, vous devez d'abord installer Node.js sur votre machine
 
 Ensuite, vous devez cloner ce projet sur votre machine. Ouvrez une fenêtre de terminal et exécutez la commande suivante:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-`git clone https://github.com/nom_du_repo.git`
-=======
 `git clone https://github.com/PGaillot/frontProject.git`
->>>>>>> dev
-=======
-`git clone https://github.com/PGaillot/frontProject.git`
->>>>>>> 922a602a5cfb65f72cc030c0386f89a5643c620b
-
 
 Une fois le projet cloné, naviguez jusqu'au répertoire `Kinomap` et exécutez la commande suivante pour installer les dépendances:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-`cd nom_du_repo
-npm install`
-
-=======
-`cd FrontProject`
-`npm update`
->>>>>>> 922a602a5cfb65f72cc030c0386f89a5643c620b
-
-## Utilisation
-
-=======
 `cd FrontProject`
 `npm update`
 
 ## Utilisation
 
->>>>>>> dev
+`cd FrontProject`
+`npm update`
+
+## Utilisation
+
 Une fois les dépendances installées, vous pouvez exécuter le projet en utilisant la commande suivante:
 
 `ng serve`

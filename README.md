@@ -41,7 +41,7 @@ J'ai également adapté la maquette pour qu'elle soit compatible avec des écran
 
 Dans ce projet, j'ai cherché à reproduire la maquette fournie avec le plus de fidélité possible en utilisant le framework Angular. En plus de la reproduction de la maquette, j'ai mis en place certaines fonctionnalités supplémentaires pour montrer mes compétences en tant que développeur frontend.
 
-Parmi ces fonctionnalités, j'ai utilisé une palette de couleurs dynamique pour permettre à l'utilisateur de changer les couleurs de l'application en temps réel. J'ai également utilisé le framework Material Design pour la mise en place des accordéons, tout en les personnalisant pour s'adapter à la maquette.
+Parmi ces fonctionnalités, j'ai utilisé une palette de couleurs dynamique pour permettre à l'utilisateur de changer les couleurs de l'application en temps réel. J'ai également utilisé le framework Material Design pour la mise en place des accordéons et des boutons, tout en les personnalisant pour s'adapter à la maquette.
 
 Enfin, j'ai également travaillé sur la mise en place du responsive design pour que l'application puisse être affichée correctement sur différentes tailles d'écran, allant des petits écrans aux tablettes et aux téléphones.
 

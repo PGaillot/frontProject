@@ -8,7 +8,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
     id="accordion"
     [ngClass]="{ xSmallScreen: xSmallScreen }"
   >
-    <mat-expansion-panel hideToggle>
+    <mat-expansion-panel class="mat-elevation-z0" hideToggle>
       <mat-expansion-panel-header>
         <mat-panel-description>
           {{ faq.title }}

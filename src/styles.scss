@@ -4,8 +4,8 @@
 @import './app/kinomap-color-theme.scss';
 
 $primary-500: map-get($md-yellow, 500);
-$secondrary-50:map-get($md-blue, 50);
-$secondrary-500: map-get($md-blue, 500);
+$secondary-50:map-get($md-blue, 50);
+$secondary-500: map-get($md-blue, 500);
 $dark-500: map-get($md-dark, 500);
 $dark-500-contrast: map-get($kinomap-darker, '500-contrast');
 $dark-300: map-get($md-dark, 300);
@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Sk-Modernist";
-  background-color: $secondrary-50;
+  background-color: $secondary-50;
 }
 
 h1,
@@ -47,14 +47,15 @@ h3 {
   font-size: 2em;
 }
 
-@font-face {
-  font-family: "Sk-Modernist-Bold";
-  src: url("./assets/fonts/Sk-Modernist-Bold.otf") format("opentype");
-}
 
 @font-face {
   font-family: "Sk-Modernist";
   src: url("./assets/fonts/Sk-Modernist-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sk-Modernist-Bold";
+  src: url("./assets/fonts/Sk-Modernist-Bold.otf") format("opentype");
 }
 
 @font-face {
@@ -73,13 +74,6 @@ h3 {
 
 .dark-300-color{
  color: $dark-300;
-}
-
-#btn-cta {
-  background-color: $primary-500;
-  padding: 0.8em 2em;
-  color: $dark-500;
-  border-radius: 0.4em;
 }
 
 #action {

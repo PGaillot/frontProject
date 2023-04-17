@@ -7,11 +7,13 @@ $dark-500: map-get($md-dark, 500);
 #accordion {
   mat-expansion-panel-header {
     padding: 1em;
+    border: 0.2em $dark-50 solid;
 
     .mat-expansion-panel-header-description {
       justify-content: space-between;
       margin: 0 1.5em 0 2em;
     }
+
 
     #add-icon {
       border: 0.2em solid $dark-50;

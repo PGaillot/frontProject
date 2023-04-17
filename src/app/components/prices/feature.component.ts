@@ -4,7 +4,10 @@ import { Component } from "@angular/core";
     selector:'app-feature',
     template:`
         <body>
-            <div class="marker"></div>
+            <div class="marker">
+                <span class="check-icon part-a"></span>
+                <span class="check-icon part-b"></span>
+            </div>
             <span><ng-content></ng-content></span>
         </body>
     `,

@@ -26,15 +26,13 @@
   </div>
 
   <ng-container *ngIf="subscription.best_value; else bestValueTemplate">
-    <button class="mat-btn-cta fill" mat-flat-button color="primary">
+    <button class="mat-btn-cta btn-fill" mat-flat-button color="primary">
       Abonnez-vous
     </button>
   </ng-container>
   <ng-template #bestValueTemplate>
-    <button class="mat-btn-cta stroked" mat-stroked-button color="accent">
+    <button class="mat-btn-cta btn-stroked" mat-stroked-button color="accent">
       Abonnez-vous
     </button>
   </ng-template>
-
-  <!-- <div id="btn-cta" class="cta">Abonnez-vous</div> -->
 </body>

@@ -6,7 +6,7 @@ $dark-500: map-get($md-dark, 500);
 $dark-500-contrast: map-get($kinomap-darker, "500-contrast");
 
 body {
-  margin: 0 1em;
+  margin: 0 1em 1em 1em;
   background-color: $dark-500;
   padding: 4em 8em;
 
@@ -16,7 +16,7 @@ body {
     align-items: flex-start;
     gap: 1em;
 
-    h3 {
+    h2 {
       color: $dark-500-contrast;
     }
 
@@ -24,8 +24,14 @@ body {
       display: flex;
       flex-direction: column;
       align-items: start;
+      font-size: 1.4em;
       color: $dark-100;
-      width: 24em;
+      width: 26em;
+    }
+
+    .mat-btn-cta{
+      align-self: flex-start;
+      padding: 1em 4em 1.1em 4em;
     }
   }
 }
